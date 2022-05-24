@@ -4,7 +4,7 @@ export const ContainerHome = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100vh;
+    height: 100%;
     /* background-color: red; */
 `
 
@@ -26,26 +26,38 @@ export const Img = styled.img`
 
 export const InfoHome = styled.div`
     text-align: center;
-    color: #fff;
+    color: #000;
     /* background-color: green; */
 `
 
 export const Curriculum = styled.div`
-    display: flex;
-    margin: 0 auto;
+    margin-top: 2.81rem;
     text-align: center;
-    border-radius: 5px;
-    background-color: red;
 `
+
 export const CVLink = styled.a`
-    color: #fff;
     width: 100px;
-    padding: 10px;
     text-decoration: none;
+    background-color: #2e4acd;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 0.8rem 1.3rem;
+    border-radius: 32px;
 `
 
 export const LinkContact = styled.div`
+    width: 100%;
+    height: 8.75rem;    
+    display: flex;
+    align-items: flex-end;
     text-align: center;
-    color: #fff;
+    color: #000;
+`
+
+export const MediaLinks = styled.a`
+    text-decoration: none;
+    font-weight: 700;
+    color: #2e4acd;
 `
 

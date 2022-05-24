@@ -6,7 +6,8 @@ import {
     ImgContainer,
     Curriculum,
     CVLink,
-    LinkContact
+    LinkContact,
+    MediaLinks
 } from '../styles/HomeStyles'
 import Image from '../assets/profile.png'
 import Pdf from '../assets/CV-DenilsonVega.pdf'
@@ -30,26 +31,22 @@ const Home = () => {
 
             <LinkContact>
                 <p>You can follow me on
-                    <a
+                    <MediaLinks
                         href='https://github.com/DanielVegaf'
                         target='_blank'
                         rel='noreferrer'
-                    > GitHub
-                    </a>
-                    , Also on
-                    <a
+                    > GitHub </MediaLinks>, Also on
+                    <MediaLinks
                         href='https://github.com/DanielVegaf'
                         target='_blank'
                         rel='noreferrer'
-                    > Linkedin
-                    </a>
-                    and my
-                    <a
+                    > Linkedin </MediaLinks> and my
+                    <MediaLinks
                         href='https://github.com/DanielVegaf'
                         target='_blank'
                         rel='noreferrer'
                     > Email
-                    </a>
+                    </MediaLinks>
                 </p>
             </LinkContact>
         </ContainerHome>

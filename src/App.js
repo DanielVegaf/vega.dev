@@ -9,16 +9,16 @@ import { PortfolioPage } from './pages/PortfolioPage';
 import { AboutPage } from './pages/AboutPage';
 
 import { Container } from './styles/ContainerStyles'
-import { StyledHeader, Title, HeaderLinks, Links } from './styles/NavegationStyles'
+import { StyledHeader, LinkTitle, Title, HeaderLinks, Links } from './styles/NavegationStyles'
 
 function App() {
   return (
     <Container>
       <Router>
         <StyledHeader>
-          <Links to="/">
-            <Title>vega.dev</Title>
-          </Links>
+          <LinkTitle to="/">
+            <Title>dev</Title>
+          </LinkTitle>
           <HeaderLinks>
             <Links to="/">Home</Links>
             <Links to="/portfolio">Portfolio</Links>
