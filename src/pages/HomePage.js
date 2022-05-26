@@ -4,7 +4,7 @@ import Home from '../components/Home'
 export const HomePage = () => {
   return (
     <div>
-      Demo v0.1 
+      Demo v1.1 
         <Home />
     </div>
   )

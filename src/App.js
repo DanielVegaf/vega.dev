@@ -33,10 +33,8 @@ function App() {
           </Routes>
         </main>
       </Router>
-
-
     </Container>
-  );
+    );
 }
 
 export default App;

@@ -24,7 +24,7 @@ const Home = () => {
             </InfoHome>
 
             <Curriculum>
-                <CVLink download="CV-DenilsonVega" href={Pdf}>
+                <CVLink target='_blank' href={Pdf}>
                     Download CV
                 </CVLink>
             </Curriculum>
@@ -35,12 +35,14 @@ const Home = () => {
                         href='https://github.com/DanielVegaf'
                         target='_blank'
                         rel='noreferrer'
-                    > GitHub </MediaLinks>, Also on
+                    > GitHub 
+                    </MediaLinks>, Also on
                     <MediaLinks
                         href='https://github.com/DanielVegaf'
                         target='_blank'
                         rel='noreferrer'
-                    > Linkedin </MediaLinks> and my
+                    > Linkedin 
+                    </MediaLinks> and my
                     <MediaLinks
                         href='https://github.com/DanielVegaf'
                         target='_blank'

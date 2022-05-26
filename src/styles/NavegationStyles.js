@@ -7,7 +7,7 @@ export const StyledHeader = styled.header`
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    justify-content: center;
+    justify-content: space-around;
     /* background-color: red; */
 `
 
