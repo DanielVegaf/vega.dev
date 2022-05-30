@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 
+export const GridContainer = styled.div`
+    /* background-color: red; */
+`
+
 export const Grid = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, 330px);

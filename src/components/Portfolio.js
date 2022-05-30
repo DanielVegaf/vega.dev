@@ -1,10 +1,10 @@
 import React from 'react'
 import Footer from './Footer'
-import { Grid, Card } from '../styles/PortfolioStyles'
+import { GridContainer, Grid, Card } from '../styles/PortfolioStyles'
 
 const Portfolio = () => {
   return (
-    <div>
+    <GridContainer>
       <Grid>
         <Card className='card'>
           Work 1
@@ -21,7 +21,7 @@ const Portfolio = () => {
       </Grid>
 
       <Footer />
-    </div>
+    </GridContainer>
   )
 }
 

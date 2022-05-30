@@ -7,18 +7,31 @@ import { FaReact } from 'react-icons/fa';
 import { SiStyledcomponents } from 'react-icons/si';
 import { FaGitAlt } from 'react-icons/fa';
 
-import { AStack, AstackItem, AStackContent } from '../styles/AboutStyles'
+import {
+  AboutContent,
+  TitlesH2,
+  ALengend,
+  APresentation,
+  ALegendTitle,
+  ALegendP,
+  AStack,
+  ASkillContent,
+  AstackItem,
+  AStackContent,
+  AStackIcon,
+  AStackText
+} from '../styles/AboutStyles'
 
 const About = () => {
   return (
-    <div>
-      <div>
-        <h2>Denilson Vega.</h2>
-        <p>Hello, I am Denilson Vega frontend developer, thank you for visiting my website.</p>
-      </div>
+    <AboutContent>
+      <ALengend>
+        <ALegendTitle>Denilson Vega.</ALegendTitle>
+        <ALegendP>Hello, I am Denilson Vega frontend developer, thank you for visiting my website.</ALegendP>
+      </ALengend>
 
-      <div>
-        <h3>¿Quien soy yo?</h3>
+      <APresentation>
+        <TitlesH2>¿Quien soy yo?</TitlesH2>
         <p>I am a Frontend developer, I currently study on my own,
           specifically in JavaScript technologies, React Js, Vue Js, I
           like to work as a team, form a good working group to
@@ -30,52 +43,87 @@ const About = () => {
           fully and be able to evolve my skills more in this great
           environment.
         </p>
-      </div>
+      </APresentation>
 
       <AStack>
-        <h3>My Stack</h3>
-        <p>Here are some of the technologies I use:</p>
-        <AstackItem title='HTML'>
-          <AStackContent>  
-            <span><ImHtmlFive /></span>
-            <p>Html</p>
-          </AStackContent>
-        </AstackItem>
-        <AstackItem title='Css'>
-          <AStackContent>  
-            <span><SiCss3 /></span>
-            <p>Css</p>
-          </AStackContent>
-        </AstackItem>
-        <AstackItem title='Javascript'>
-          <AStackContent>  
-            <span><SiJavascript /></span>
-            <p>JavaScript</p>
-          </AStackContent>
-        </AstackItem>
-        <AstackItem title='React Js'>
-          <AStackContent>  
-            <span><FaReact /></span>
-            <p>React</p>
-          </AStackContent>
-        </AstackItem>
-        <AstackItem title='Styled-components'>
-          <AStackContent>  
-            <span><SiStyledcomponents /></span>
-            <p>Styled-components</p>
-          </AStackContent>
-        </AstackItem>
-        <AstackItem title='Github'>
-          <AStackContent>  
-            <span><FaGitAlt /></span>
-            <p>GitHub</p>
-          </AStackContent>
-        </AstackItem>
+        <div>
+          <TitlesH2>My Stack</TitlesH2>
+          <p>Here are some of the technologies I use:</p>
+        </div>
+        <ASkillContent>
+
+          <AstackItem title='HTML'>
+            <AStackContent>
+              <AStackIcon>
+                <ImHtmlFive />
+              </AStackIcon>
+              <AStackText>
+                Html
+              </AStackText>
+            </AStackContent>
+          </AstackItem>
+
+          <AstackItem title='Css'>
+            <AStackContent>
+              <AStackIcon>
+                <SiCss3 />
+              </AStackIcon>
+              <AStackText>
+                Css
+              </AStackText>
+            </AStackContent>
+          </AstackItem>
+
+          <AstackItem title='Javascript'>
+            <AStackContent>
+              <AStackIcon>
+                <SiJavascript />
+              </AStackIcon>
+              <AStackText>
+                JavaScript
+              </AStackText>
+            </AStackContent>
+          </AstackItem>
+
+          <AstackItem title='React Js'>
+            <AStackContent>
+              <AStackIcon>
+                <FaReact />
+              </AStackIcon>
+              <AStackText>
+                React
+              </AStackText>
+            </AStackContent>
+          </AstackItem>
+
+          <AstackItem title='Styled-components'>
+            <AStackContent>
+              <AStackIcon>
+                <SiStyledcomponents />
+              </AStackIcon>
+              <AStackText>
+                Styled-components
+              </AStackText>
+            </AStackContent>
+          </AstackItem>
+
+          <AstackItem title='Github'>
+            <AStackContent>
+              <AStackIcon>
+                <FaGitAlt />
+              </AStackIcon>
+              <AStackText>
+                GitHub
+              </AStackText>
+            </AStackContent>
+          </AstackItem>
+
+        </ASkillContent>
       </AStack>
 
       <Footer />
 
-    </div>
+    </AboutContent>
   )
 }
 
