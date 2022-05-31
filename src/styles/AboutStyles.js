@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const AboutContent = styled.div`
-    /* background-color: gray; */
     margin: 0 auto;
     padding: 8px;
     /* text-align: justify; */

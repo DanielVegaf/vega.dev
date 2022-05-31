@@ -1,4 +1,3 @@
-import './App.css';
 import {
   BrowserRouter as Router,
   Route,
@@ -8,23 +7,62 @@ import { HomePage } from './pages/HomePage';
 import { PortfolioPage } from './pages/PortfolioPage';
 import { AboutPage } from './pages/AboutPage';
 
-import { Container } from './styles/ContainerStyles'
-import { StyledHeader, LinkTitle, Title, HeaderLinks, Links } from './styles/NavegationStyles'
+import {
+  Container,
+  Wrapper, 
+  LogoContainer,
+  BackHome,
+  Menu,
+  MenuItem,
+  MenuItemLink,
+  MobileIcon
+} from './styles/NavegationStyles'
+
+import { FaTimes, FaBars } from "react-icons/fa";
+import { useState } from 'react';
 
 function App() {
+
+  const [showMenu, setShowMenu] = useState(false)
+
   return (
     <Container>
       <Router>
-        <StyledHeader>
-          <LinkTitle to="/">
-            <Title>dev</Title>
-          </LinkTitle>
-          <HeaderLinks>
-            <Links to="/">Home</Links>
-            <Links to="/portfolio">Portfolio</Links>
-            <Links to="/about">About</Links>
-          </HeaderLinks>
-        </StyledHeader>
+        <Wrapper>
+        
+          <LogoContainer>
+            <BackHome to="/">dev</BackHome>
+          </LogoContainer>
+
+          <MobileIcon onClick={() => setShowMenu(!showMenu) }>
+            { showMenu ? <FaTimes /> : <FaBars />}
+          </MobileIcon>
+
+          <Menu open={showMenu}>
+            <MenuItem>
+              <MenuItemLink
+                to="/" 
+                onClick={() => setShowMenu(!showMenu) }>
+                Home
+              </MenuItemLink>
+            </MenuItem>
+            <MenuItem>
+              <MenuItemLink
+                to="/portfolio" 
+                onClick={() => setShowMenu(!showMenu) }>
+                Portfolio
+              </MenuItemLink>
+            </MenuItem>
+            <MenuItem>
+              <MenuItemLink
+                to="/about" 
+                onClick={() => setShowMenu(!showMenu) }>
+                About
+              </MenuItemLink>
+            </MenuItem>
+          </Menu>
+
+        </Wrapper>
         <main>
           <Routes>
             <Route exact path="/about" element={<AboutPage />}> </Route>
@@ -34,7 +72,7 @@ function App() {
         </main>
       </Router>
     </Container>
-    );
+  );
 }
 
 export default App;

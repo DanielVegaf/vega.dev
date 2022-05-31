@@ -1,27 +1,17 @@
 import React from 'react'
 import {
-    ContainerHome,
-    InfoHome,
-    Img,
-    ImgContainer,
     Curriculum,
-    CVLink,
-    LinkContact,
-    MediaLinks
+    CVLink
 } from '../styles/HomeStyles'
-import Image from '../assets/profile.png'
 import Pdf from '../assets/CV-DenilsonVega.pdf'
 
 const Home = () => {
     return (
-        <ContainerHome>
-            <InfoHome>
-                <ImgContainer>
-                    <Img src={Image} alt='profile' title='Denilson Vega' />
-                </ImgContainer>
+        <div>
+            <div>
                 <h3>Denilson Vega</h3>
                 <p>I’m a developer from Costa Rica who is mainly interested in web technologies.</p>
-            </InfoHome>
+            </div>
 
             <Curriculum>
                 <CVLink target='_blank' href={Pdf}>
@@ -29,29 +19,29 @@ const Home = () => {
                 </CVLink>
             </Curriculum>
 
-            <LinkContact>
+            <div>
                 <p>You can follow me on
-                    <MediaLinks
+                    <div
                         href='https://github.com/DanielVegaf'
                         target='_blank'
                         rel='noreferrer'
                     > GitHub 
-                    </MediaLinks>, Also on
-                    <MediaLinks
+                    </div>, Also on
+                    <div
                         href='https://github.com/DanielVegaf'
                         target='_blank'
                         rel='noreferrer'
                     > Linkedin 
-                    </MediaLinks> and my
-                    <MediaLinks
+                    </div> and my
+                    <div
                         href='https://github.com/DanielVegaf'
                         target='_blank'
                         rel='noreferrer'
                     > Email
-                    </MediaLinks>
+                    </div>
                 </p>
-            </LinkContact>
-        </ContainerHome>
+            </div>
+        </div>
     )
 }
 
