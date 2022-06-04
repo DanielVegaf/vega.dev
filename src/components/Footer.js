@@ -1,6 +1,7 @@
 import React from 'react'
-import { FContainer, FNavegation, FLink, FLinkicon, FMedia, FMediaLink } from '../styles/FooterStyles';
-import { BsArrowBarRight } from 'react-icons/bs';
+import { 
+    FContainer, FLegend, FMedia, FMediaLink } from '../styles/FooterStyles';
+
 import { FaGithub } from 'react-icons/fa';
 import { AiFillLinkedin } from 'react-icons/ai';
 import { AiFillTwitterCircle } from 'react-icons/ai';
@@ -8,28 +9,11 @@ import { AiFillTwitterCircle } from 'react-icons/ai';
 const Footer = () => {
     return (
         <FContainer>
-            <FNavegation>
-                <FLink
-                    to="/">Home
-                    <FLinkicon>
-                        <BsArrowBarRight />
-                    </FLinkicon>
-                </FLink>
+            
 
-                <FLink
-                    to="/portfolio">Portfolio
-                    <FLinkicon>
-                        <BsArrowBarRight />
-                    </FLinkicon>
-                </FLink>
-                
-                <FLink
-                    to="/about">About
-                    <FLinkicon>
-                        <BsArrowBarRight />
-                    </FLinkicon>
-                </FLink>
-            </FNavegation>
+            <FLegend>
+            Puedes seguirme en:
+            </FLegend>
 
             <FMedia>
                 <FMediaLink

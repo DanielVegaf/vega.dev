@@ -1,5 +1,4 @@
 import React from 'react'
-import Footer from './Footer'
 import { ImHtmlFive } from 'react-icons/im';
 import { SiCss3 } from 'react-icons/si';
 import { SiJavascript } from 'react-icons/si';
@@ -20,7 +19,7 @@ import {
   AStackContent,
   AStackIcon,
   AStackText
-} from '../styles/AboutStyles'
+} from './AboutStyles'
 
 const About = () => {
   return (
@@ -120,8 +119,6 @@ const About = () => {
 
         </ASkillContent>
       </AStack>
-
-      <Footer />
 
     </AboutContent>
   )

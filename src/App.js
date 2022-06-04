@@ -3,13 +3,15 @@ import {
   Route,
   Routes
 } from "react-router-dom";
-import { HomePage } from './pages/HomePage';
-import { PortfolioPage } from './pages/PortfolioPage';
-import { AboutPage } from './pages/AboutPage';
+import { useState } from 'react';
+
+import { HomePage } from './components/home/HomePage';
+import { PortfolioPage } from './components/portfolio/PortfolioPage';
+import { AboutPage } from './components/about/AboutPage';
 
 import {
   Container,
-  Wrapper, 
+  Wrapper,
   LogoContainer,
   BackHome,
   Menu,
@@ -19,50 +21,56 @@ import {
 } from './styles/NavegationStyles'
 
 import { FaTimes, FaBars } from "react-icons/fa";
-import { useState } from 'react';
 
 function App() {
 
-  const [showMenu, setShowMenu] = useState(false)
+  const [showMenu, setShowMenu] = useState(false);
 
   return (
     <Container>
       <Router>
         <Wrapper>
-        
+
           <LogoContainer>
             <BackHome to="/">dev</BackHome>
           </LogoContainer>
 
-          <MobileIcon onClick={() => setShowMenu(!showMenu) }>
-            { showMenu ? <FaTimes /> : <FaBars />}
+          <MobileIcon onClick={() => setShowMenu(!showMenu)}>
+            {showMenu ? <FaTimes /> : <FaBars />}
           </MobileIcon>
 
-          <Menu open={showMenu}>
+          <Menu
+            onClick={() => setShowMenu(!showMenu)}
+            open={showMenu}
+          >
             <MenuItem>
               <MenuItemLink
-                to="/" 
-                onClick={() => setShowMenu(!showMenu) }>
+                className={({ isActive}) => isActive ? "active" : ""}
+                to="/"
+                onClick={() => setShowMenu(!showMenu)}>
                 Home
               </MenuItemLink>
             </MenuItem>
             <MenuItem>
               <MenuItemLink
-                to="/portfolio" 
-                onClick={() => setShowMenu(!showMenu) }>
+                className={({ isActive}) => isActive ? "active" : ""}
+                to="/portfolio"
+                onClick={() => setShowMenu(!showMenu)}>
                 Portfolio
               </MenuItemLink>
             </MenuItem>
             <MenuItem>
               <MenuItemLink
-                to="/about" 
-                onClick={() => setShowMenu(!showMenu) }>
+                className={({ isActive}) => isActive ? "active" : ""}
+                to="/about"
+                onClick={() => setShowMenu(!showMenu)}>
                 About
               </MenuItemLink>
             </MenuItem>
           </Menu>
 
         </Wrapper>
+
         <main>
           <Routes>
             <Route exact path="/about" element={<AboutPage />}> </Route>

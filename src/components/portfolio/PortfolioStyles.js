@@ -8,6 +8,7 @@ export const Grid = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, 330px);
     gap: 40px;
+    margin-top: 50px;
     padding: 20px;
     justify-content: center;
 
@@ -23,7 +24,6 @@ export const Card = styled.div`
     width: 330px;
     height: 345px;
     background-color: blueviolet;
-    /* border-radius: 10px; */
     font-size: 1.5rem;
     list-style: none;
     text-align: center;

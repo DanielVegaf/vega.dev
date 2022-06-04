@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export const Container = styled.div`
   width: 100%;
@@ -18,10 +18,10 @@ export const Wrapper = styled.div`
 `;
 
 export const LogoContainer = styled.div`
-  margin-left: 0.5rem;
+  margin-left: 1rem;
   display: flex;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-family: sans-serif;
 `;
 
@@ -31,16 +31,16 @@ export const BackHome = styled(Link)`
 `;
 
 export const Menu = styled.ul`
-  height: 100%;
+  /* height: 100vh; */
   display: flex;
   justify-content: space-between;
   list-style: none;
   @media screen and (max-width: 960px) {
     background-color: white;
     position: absolute;
-    top: 3px;
+    bottom: -16px;
     right: ${({ open }) => (open ? "0" : "130%")};
-    width: 100%;
+    width: 100vw;
     height: 100%;
     justify-content: center;
     flex-direction: column;
@@ -60,40 +60,18 @@ export const MenuItem = styled.li`
   }
 `;
 
-export const MenuItemLink = styled(Link)`
+export const MenuItemLink = styled(NavLink)`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   padding: 0.5rem 2.5rem;
   text-decoration: none;
-  color: black;
-  font-family: sans-serif;
   font-size: 2rem;
   font-weight: 300;
   cursor: pointer;
-  transition: 0.5s all ease;
-  &:hover {
-    color: #808e9b;
-    transition: 0.5s all ease;
-    div {
-      svg {
-        fill: #23394d;
-      }
-    }
-  }
-  div {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    svg {
-      display: none;
-      fill: #e0792a;
-      margin-right: 0.5rem;
-    }
-  }
+  transition: .5s all ease;
+  
   @media screen and (max-width: 960px) {
     width: 100%;
     div {
@@ -143,7 +121,7 @@ export const MobileIcon = styled.div`
     align-items: center;
     cursor: pointer;
     position: absolute;
-    right: 0;
+    right: 10px;
     top: 15px;
     z-index: 2;
     svg {

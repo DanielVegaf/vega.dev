@@ -1,53 +1,29 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 
 export const FContainer = styled.footer`
     height: 100px;
-    margin: 50px 0;
+    margin: 20px;
     display: flex;
-    justify-content: space-between;
-    /* background-color: red; */
-`
-
-export const FNavegation = styled.div`
-    display: inline-flex;
     flex-direction: column;
-    justify-content: space-around;
-    /* background-color: aqua; */
-    padding: 5px;
+    justify-content: space-between;
 `
 
-export const FLink = styled(Link)`
-    display: inline-flex;
-    text-decoration: none;
-    color: #333;
-    font-weight: 700;
-`
-
-export const FLinkicon = styled.span`
-    display: inline-flex;
-    align-items: center;
-    font-size: 20px;
-    font-weight: 700;
-    color: gray;
-
-    &:hover{
-        color: blue;
-    }
+export const FLegend = styled.div`
+    margin-top: 30px;
 `
 
 export const FMedia = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
-    /* background-color: greenyellow; */
-    padding: 5px;
 `
 
 export const FMediaLink = styled.a`
-    display: inline-flex;
-    justify-content: flex-end;
+    display: flex;
+    margin: 0 10px 0 0;
     align-items: center;
     text-decoration: none;
+    font-size: 1.2rem;
+    color: #178ee3;
 `
 

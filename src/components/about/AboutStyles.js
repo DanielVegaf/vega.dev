@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const AboutContent = styled.div`
     margin: 0 auto;
-    padding: 8px;
+    padding: 20px;
     /* text-align: justify; */
 `
 export const TitlesH2 = styled.h2`
