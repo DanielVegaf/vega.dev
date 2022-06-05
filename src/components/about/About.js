@@ -21,6 +21,8 @@ import {
   AStackText
 } from './AboutStyles'
 
+import Footer from '../Footer'
+
 const About = () => {
   return (
     <AboutContent>
@@ -120,6 +122,7 @@ const About = () => {
         </ASkillContent>
       </AStack>
 
+      <Footer />
     </AboutContent>
   )
 }

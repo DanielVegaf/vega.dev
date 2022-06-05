@@ -9,6 +9,8 @@ import {
     Curriculum,
     CVLink
 } from './HomeStyles'
+import Portfolio from '../portfolio/Portfolio'
+import Footer from '../Footer'
 import Pdf from '../../assets/CV-DenilsonVega.pdf'
 const Home = () => {
     return (
@@ -23,23 +25,18 @@ const Home = () => {
                     </DescriptionRoll>
                 </Description>
 
-                {/* <Curriculum>
-                <CVLink target='_blank' href={Pdf}>
-                    Download CV
-                </CVLink>
-            </Curriculum> */}
                 <DescriptionLinks>
                     <Curriculum>
                         <CVLink
                             primary
                             href={Pdf}
-                            target="_blank"
+                            download="Curriculum Denilson Vega"
                             rel='noreferrer'
                         >
                             Descarga mi cv
                         </CVLink>
                         <CVLink
-                            href="/"
+                            href="mailto:denilson.dvf@gmial.com"
                             target="_blank"
                             rel='noreferrer'
                         >
@@ -48,6 +45,9 @@ const Home = () => {
                     </Curriculum>
                 </DescriptionLinks>
             </Main>
+
+            <Portfolio />
+            <Footer />
         </Container>
     )
 }

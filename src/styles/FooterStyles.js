@@ -1,29 +1,37 @@
 import styled from 'styled-components'
 
 export const FContainer = styled.footer`
-    height: 100px;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    width: 100%;
+    height: 10px;
+    margin-top: 100px;
+    padding: 20px;
+    box-sizing: border-box;
 `
 
 export const FLegend = styled.div`
-    margin-top: 30px;
+    text-align: center;
 `
 
 export const FMedia = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    padding-bottom: 20px;
 `
 
 export const FMediaLink = styled.a`
-    display: flex;
-    margin: 0 10px 0 0;
+    display: inline-flex;
     align-items: center;
+    margin: 10px;
     text-decoration: none;
-    font-size: 1.2rem;
-    color: #178ee3;
+    color: black;
+    transition: .2 ease-in-out;
+
+    &:hover {
+        transition: .2 ease-in-out;
+        font-weight: 900;
+    }
 `
 

@@ -18,23 +18,48 @@ export const Wrapper = styled.div`
 `;
 
 export const LogoContainer = styled.div`
-  margin-left: 1rem;
+  margin-left: 3.1rem;
   display: flex;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: sans-serif;
+  transition: .2 ease-in-out;
+
+  @media screen and (max-width: 960px) {
+    margin-left: 1.5rem;
+    transition: .2 ease-in-out;
+  }
+  @media screen and (max-width: 500px) {
+    margin-left: 1.5rem;
+    transition: .2 ease-in-out;
+  }
 `;
 
 export const BackHome = styled(Link)`
   color: black;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  transition: .2s ease-in-out;
+  color: white;
+  width: 35px;
+  height: 35px;
+
+  &:hover{
+    transition: .2s ease-in-out;
+    transform: rotate(90deg);
+    border-radius: 50%;
+  }
 `;
 
 export const Menu = styled.ul`
-  /* height: 100vh; */
   display: flex;
   justify-content: space-between;
   list-style: none;
+  margin-right: 100px;
+  transition: .2 ease-in-out;
   @media screen and (max-width: 960px) {
     background-color: white;
     position: absolute;
@@ -42,21 +67,24 @@ export const Menu = styled.ul`
     right: ${({ open }) => (open ? "0" : "130%")};
     width: 100vw;
     height: 100%;
+    margin: 0;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    transition: .3s all ease;
+    transition: .2s all ease;
   }
 `;
 
 export const MenuItem = styled.li`
   height: 100%;
+  transition: .2 ease-in-out;
   @media screen and (max-width: 960px) {
     width: 100%;
     height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .2 ease-in-out;
   }
 `;
 
@@ -65,49 +93,42 @@ export const MenuItemLink = styled(NavLink)`
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 0.5rem 2.5rem;
+  padding: 0.5rem 1rem;
   text-decoration: none;
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 18px;
   cursor: pointer;
   transition: .5s all ease;
   
   @media screen and (max-width: 960px) {
     width: 100%;
-    div {
-      width: 30%;
-      justify-content: left;
-      svg {
-        display: flex;
-      }
-    }
-  }
-  @media screen and (max-width: 880px) {
-    div {
-      width: 40%;
-      justify-content: left;
-      svg {
-        display: flex;
-      }
-    }
+    transition: .2 ease-in-out;
   }
   @media screen and (max-width: 500px) {
-    div {
-      width: 60%;
-      justify-content: left;
-      svg {
-        display: flex;
-      }
-    }
+    font-size: 2rem;
+    transition: .2 ease-in-out;
   }
-  @media screen and (max-width: 260px) {
-    div {
-      width: 100%;
-      justify-content: left;
-      svg {
-        display: flex;
-      }
-    }
+`;
+
+export const MenuItemCV = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  transition: .5s all ease;
+
+  @media screen and (max-width: 960px) {
+    width: 100%;
+    transition: .2 ease-in-out;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 2rem;
+    transition: .2 ease-in-out;
   }
 `;
 
@@ -120,13 +141,18 @@ export const MobileIcon = styled.div`
     display: flex;
     align-items: center;
     cursor: pointer;
+    transition: .2s ease-in-out;
     position: absolute;
     right: 10px;
     top: 15px;
     z-index: 2;
     svg {
       fill: white;
-      /* margin-right: 0.5rem; */
+    }
+
+    &:hover{
+      transition: .2s ease-in-out;
+      border-radius: 5px;
     }
   }
 `;
