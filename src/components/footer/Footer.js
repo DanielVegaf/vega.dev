@@ -1,6 +1,10 @@
 import React from 'react'
 import { 
-    FContainer, FLegend, FMedia, FMediaLink } from '../styles/FooterStyles';
+    FContainer, 
+    FLegend, 
+    FMedia, 
+    FMediaLink 
+} from './Footer.styled';
 
 import { FaGithub } from 'react-icons/fa';
 import { AiFillLinkedin } from 'react-icons/ai';

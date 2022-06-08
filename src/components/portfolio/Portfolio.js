@@ -10,7 +10,7 @@ import {
   CardContentLinks,
   CardLink,
   CardText
-} from './PortfolioStyles'
+} from './Portfolio.styled'
 
 const Portfolio = () => {
   return (
@@ -20,19 +20,19 @@ const Portfolio = () => {
       </GridTitle>
       <Grid>
 
-        <Card first>
+        <Card bgcolor={'#eccc68'}>
           <CardMain>
             <CardTitle>
               <h3>App de tareas</h3>
             </CardTitle>
             <CardContentText>
               <CardText>
-                Este es un proyecto de una aplicación de tareas enfocada a la administración de pequeñas tareas diarias.
+                Es un proyecto sobre una aplicación de tareas enfocada a la creación y administración de pequeñas tareas diarias.
               </CardText>
             </CardContentText>
             <CardContentLinks>
               <CardLink target="_blank" href='https://github.com/DanielVegaf/react-tasks'>Leer Case Study</CardLink>
-              <CardLink target="_blank" href='https://reactasks.netlify.app/'>Ver pagina</CardLink>
+              <CardLink target="_blank" href='https://reactasks.netlify.app/'>Ver página</CardLink>
             </CardContentLinks>
           </CardMain>
         </Card>

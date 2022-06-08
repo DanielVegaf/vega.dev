@@ -19,9 +19,9 @@ import {
   AStackContent,
   AStackIcon,
   AStackText
-} from './AboutStyles'
+} from './About.styled'
 
-import Footer from '../Footer'
+import Footer from '../footer/Footer'
 
 const About = () => {
   return (

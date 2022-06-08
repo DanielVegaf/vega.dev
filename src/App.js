@@ -18,7 +18,7 @@ import {
   MenuItemLink,
   MenuItemCV,
   MobileIcon
-} from './styles/NavegationStyles'
+} from './styles/Navegation.styled'
 
 import Pdf from './assets/CV-DenilsonVega.pdf'
 
@@ -68,7 +68,7 @@ function App() {
                 rel='noreferrer'
                 className={({ isActive }) => isActive ? "active" : ""}
                 onClick={() => setShowMenu(!showMenu)}>
-                Curriculum
+                Ver Curriculum
               </MenuItemCV>
             </MenuItem>
           </Menu>

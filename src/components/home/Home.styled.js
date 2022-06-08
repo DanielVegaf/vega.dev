@@ -76,9 +76,9 @@ export const CVLink = styled.a`
     padding: 10px;
     margin: 10px;
     transition: .2s ease-in-out;
-    font-weight: ${props => props.primary ? "200" : "600"};
-    background: ${props => props.primary ? "black" : "white"};
-    color: ${props => props.primary ? "white" : "black"};
+    font-weight: ${({primary}) => (primary ? "200" : "600")};
+    background: ${({primary}) => (primary ? "black" : "white")};
+    color: ${({primary}) => (primary ? "white" : "black")};
 
     &:hover{
         transition: .2s ease-in-out;

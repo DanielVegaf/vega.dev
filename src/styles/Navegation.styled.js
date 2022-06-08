@@ -78,6 +78,7 @@ export const Menu = styled.ul`
 export const MenuItem = styled.li`
   height: 100%;
   transition: .2 ease-in-out;
+
   @media screen and (max-width: 960px) {
     width: 100%;
     height: 70px;
@@ -97,7 +98,19 @@ export const MenuItemLink = styled(NavLink)`
   text-decoration: none;
   font-size: 18px;
   cursor: pointer;
-  transition: .5s all ease;
+  transition: .2s all ease;
+  color: gray;
+
+  &:hover {
+    color: black;
+  }
+
+  &.active{
+    text-decoration: overline;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    color: black;
+  }
   
   @media screen and (max-width: 960px) {
     width: 100%;
@@ -118,9 +131,13 @@ export const MenuItemCV = styled.a`
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
-  color: black;
+  color: #3742fa;
   cursor: pointer;
-  transition: .5s all ease;
+  transition: .2s all ease;
+  
+  &:hover {
+    color: #70a1ff;
+  }
 
   @media screen and (max-width: 960px) {
     width: 100%;

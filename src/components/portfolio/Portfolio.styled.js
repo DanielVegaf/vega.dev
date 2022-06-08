@@ -1,6 +1,11 @@
 import styled from 'styled-components'
 
-export const GridContainer = styled.div``
+export const GridContainer = styled.div`
+padding: 100px 0 100px;
+box-sizing: border-box;
+    margin-top: -50px ;
+    background-color: #eee;
+`
 export const GridTitle = styled.div`
     width: 80%;
     font-size: 1.5rem;
@@ -35,11 +40,11 @@ export const Card = styled.div`
     list-style: none;
     color: black;
     padding: 20px;
-    background-color: #b2bec3;
-    ${props => props.first && `background-color: #fab1a0`};
+    background-color: ${({ bgcolor }) => ( bgcolor ? bgcolor : "#a4b0be")};
+    /*${props => props.color && `background-color: #fab1a0`};
     ${props => props.second && `background-color: #0984e3`};
     ${props => props.third && `background-color: #55efc4`};
-    ${props => props.fourth && `background-color: #a29bfe`};
+    ${props => props.fourth && `background-color: #a29bfe`}; */
 
     @media (max-width: 848px) {
         width: 100%;

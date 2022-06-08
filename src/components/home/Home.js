@@ -8,10 +8,11 @@ import {
     DescriptionLinks,
     Curriculum,
     CVLink
-} from './HomeStyles'
+} from './Home.styled'
 import Portfolio from '../portfolio/Portfolio'
-import Footer from '../Footer'
+import Footer from '../footer/Footer'
 import Pdf from '../../assets/CV-DenilsonVega.pdf'
+
 const Home = () => {
     return (
         <Container>
